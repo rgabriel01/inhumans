@@ -13,10 +13,10 @@ Note that a client application represents the entity that will consume the conte
 In this case, we have 3 different client applications wishing to gain access to this API service
 * Admin as the FE administrative application
 * Wasp as the mobile application
-* Visiion as the NextJS application
+* Vision as the NextJS application
 > Technically this done on the console side
 ```ruby
-Doorkeeper::Application.create(name: "Admin", redirect_uri: "urn:ietf:wg:oauth:2.0:oob", scopes: ["read", "write"])
+Doorkeeper::Application.create(name: "Admin", redirect_uri: "urn:ietf:wg:oauth:2.0:oob", scopes: ["admin"])
 Doorkeeper::Application.create(name: "Wasp", redirect_uri: "urn:ietf:wg:oauth:2.0:oob", scopes: ["read"])
 Doorkeeper::Application.create(name: "Vision", redirect_uri: "urn:ietf:wg:oauth:2.0:oob", scopes: ["read"])
 ```
