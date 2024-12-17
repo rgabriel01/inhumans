@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   get "tools" => "tools#index"
 
+  post "signup" => "signups#create"
   # Defines the root path route ("/")
   # root "posts#index"
 end
